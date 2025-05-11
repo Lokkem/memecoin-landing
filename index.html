@@ -3,57 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nombre de la Memecoin</title>
+  <title>$BRRP – The Loudest Memecoin on Solana</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Space Grotesk', sans-serif; }
-  </style>
+  <style>body{font-family:'Space Grotesk',sans-serif}</style>
 </head>
-<body class="bg-gradient-to-br from-[#0f0f0f] to-[#1c1c1c] text-white min-h-screen">
-  <div class="max-w-2xl mx-auto p-6 text-center">
-    <h1 class="text-4xl font-bold text-lime-400">[Nombre de la Memecoin]</h1>
-    <p class="mt-2 text-gray-300">Un experimento honesto en la blockchain de Solana.</p>
+<body class="bg-gradient-to-br from-orange-700 via-orange-600 to-orange-500 text-white min-h-screen">
+  <header class="w-full">
+    <!-- Replace banner.png with the actual file name you upload to the repo -->
+    <img src="banner.png" alt="$BRRP banner" class="w-full object-cover">
+  </header>
 
-    <section class="mt-10">
-      <h2 class="text-2xl font-semibold text-lime-300">Tokenomics</h2>
-      <ul class="mt-4 text-left space-y-2">
-        <li>- Total Supply: 1,000,000,000</li>
-        <li>- 90% en liquidez (Raydium)</li>
-        <li>- LP tokens quemados permanentemente 🔥</li>
-        <li>- 10% en wallet del creador (visible)</li>
-        <li>- Minting desactivado</li>
+  <main class="max-w-3xl mx-auto px-6 py-10 text-center">
+    <!-- Coin logo -->
+    <!-- Replace brrp-coin.png with the actual coin-logo file name -->
+    <img src="brrp-coin.png" alt="$BRRP coin logo" class="mx-auto w-40 h-40 mb-6">
+
+    <h1 class="text-5xl font-bold text-yellow-300">$BRRP</h1>
+    <p class="mt-3 text-lg text-orange-200">The loudest meme on <span class="font-semibold">Solana</span> – silent but bullish 💨🚀</p>
+
+    <section class="mt-12">
+      <h2 class="text-3xl font-semibold text-yellow-200">Tokenomics</h2>
+      <ul class="mt-4 text-left mx-auto max-w-md space-y-2">
+        <li>• Total Supply: <span class="font-semibold">1&nbsp;000&nbsp;000&nbsp;000 $BRRP</span></li>
+        <li>• 90% locked as liquidity (Raydium) – LP tokens <span class="text-red-300 font-semibold">burned forever</span></li>
+        <li>• 10% founder wallet (public &amp; verifiable)</li>
+        <li>• Minting permanently disabled</li>
       </ul>
     </section>
 
-    <section class="mt-10">
-      <h2 class="text-2xl font-semibold text-lime-300">Transparencia</h2>
-      <p class="mt-2 text-gray-300">El fundador se compromete a no vender antes de 6 meses o hasta listado en CEX.</p>
-      <p class="mt-2 text-sm">Wallet del fundador: <span class="text-lime-200">[WALLET_ADDRESS]</span></p>
-      <p class="text-sm">Token SPL: <span class="text-lime-200">[TOKEN_ADDRESS]</span></p>
-      <p class="text-sm mt-1">Ver en Solscan: <a href="#" class="text-lime-400 underline">https://solscan.io/token/[TOKEN]</a></p>
+    <section class="mt-12">
+      <h2 class="text-3xl font-semibold text-yellow-200">Transparency</h2>
+      <p class="mt-2 text-orange-100">Founder wallet (no sells for 6 months or until CEX listing):</p>
+      <code class="block mt-1 text-sm text-yellow-300 break-all">[FOUNDER_WALLET_ADDRESS]</code>
+      <p class="mt-2 text-orange-100">Token SPL address:</p>
+      <code class="block mt-1 text-sm text-yellow-300 break-all">[TOKEN_ADDRESS]</code>
+      <a href="#" class="inline-block mt-4 text-yellow-400 underline">Verify on Solscan</a>
     </section>
 
-    <section class="mt-10">
-      <h2 class="text-2xl font-semibold text-lime-300">¿Cómo comprar?</h2>
-      <ol class="mt-4 text-left list-decimal list-inside space-y-2">
-        <li>Instala la wallet Phantom</li>
-        <li>Envíate algo de SOL</li>
-        <li>Ve a Raydium o Jupiter y busca este token</li>
-        <li>Intercambia SOL por [Nombre de la Memecoin]</li>
+    <section class="mt-12">
+      <h2 class="text-3xl font-semibold text-yellow-200">How to buy</h2>
+      <ol class="mt-4 text-left mx-auto max-w-md list-decimal list-inside space-y-2">
+        <li>Install Phantom wallet.</li>
+        <li>Send some SOL to your wallet.</li>
+        <li>Open Raydium or Jupiter and search for <span class="font-semibold">$BRRP</span>.</li>
+        <li>Swap SOL → <span class="font-semibold">$BRRP</span>.</li>
       </ol>
     </section>
 
-    <section class="mt-10">
-      <h2 class="text-2xl font-semibold text-lime-300">Contrato Verificado</h2>
-      <p class="mt-2 text-sm text-gray-300">LP tokens quemados con el siguiente comando:</p>
-      <pre class="bg-black text-lime-400 p-4 rounded mt-2 text-sm overflow-x-auto">spl-token transfer &lt;LP_TOKEN_ADDRESS&gt; ALL 11111111111111111111111111111111 --fund-recipient</pre>
+    <section class="mt-12">
+      <h2 class="text-3xl font-semibold text-yellow-200">Contract Proof</h2>
+      <p class="mt-2 text-orange-100">LP tokens burned with:</p>
+      <pre class="bg-black/70 text-yellow-300 p-3 rounded mt-2 text-sm overflow-x-auto">spl-token transfer &lt;LP_TOKEN_ADDRESS&gt; ALL 11111111111111111111111111111111 --fund-recipient</pre>
     </section>
 
-    <section class="mt-10">
-      <h2 class="text-2xl font-semibold text-lime-300">Síguenos</h2>
-      <p class="mt-2"><a href="#" class="text-lime-400 underline">Twitter</a> | <a href="#" class="text-lime-400 underline">Telegram</a></p>
+    <section class="mt-12">
+      <h2 class="text-3xl font-semibold text-yellow-200">Join the Pack</h2>
+      <p class="mt-3"><a href="#" class="text-yellow-300 underline">Twitter</a> • <a href="#" class="text-yellow-300 underline">Telegram</a></p>
     </section>
-  </div>
+  </main>
+
+  <footer class="py-6 text-sm text-orange-200">© 2025 $BRRP Memecoin. Not affiliated with any other project.</footer>
 </body>
 </html>
