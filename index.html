@@ -1,82 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nombre de la Memecoin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #fefefe;
-      color: #222;
-      text-align: center;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    h1 {
-      font-size: 2.5rem;
-    }
-    .section {
-      margin-top: 2rem;
-    }
-    .code {
-      background: #eee;
-      padding: 1rem;
-      border-radius: 8px;
-      font-family: monospace;
-      white-space: pre-line;
-    }
+    body { font-family: 'Space Grotesk', sans-serif; }
   </style>
 </head>
-<body>
-  <div class="container">
-    <h1>[Nombre de la Memecoin]</h1>
-    <p>Un experimento honesto en la blockchain de Solana.</p>
+<body class="bg-gradient-to-br from-[#0f0f0f] to-[#1c1c1c] text-white min-h-screen">
+  <div class="max-w-2xl mx-auto p-6 text-center">
+    <h1 class="text-4xl font-bold text-lime-400">[Nombre de la Memecoin]</h1>
+    <p class="mt-2 text-gray-300">Un experimento honesto en la blockchain de Solana.</p>
 
-    <div class="section">
-      <h2>Tokenomics</h2>
-      <ul style="text-align: left; display: inline-block">
-        <li>Supply total: 1,000,000,000</li>
-        <li>90% en liquidez (Raydium)</li>
-        <li>LP tokens quemados permanentemente</li>
-        <li>10% en wallet del creador (transparente)</li>
-        <li>Minting desactivado</li>
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold text-lime-300">Tokenomics</h2>
+      <ul class="mt-4 text-left space-y-2">
+        <li>- Total Supply: 1,000,000,000</li>
+        <li>- 90% en liquidez (Raydium)</li>
+        <li>- LP tokens quemados permanentemente 🔥</li>
+        <li>- 10% en wallet del creador (visible)</li>
+        <li>- Minting desactivado</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Transparencia</h2>
-      <p>El creador se compromete a no vender su parte antes de 6 meses o un listado en CEX.</p>
-      <p><strong>Wallet del fundador:</strong><br />[Wallet Address]</p>
-      <p><strong>Token SPL:</strong><br />[SPL Token Address]</p>
-      <p><strong>Ver en Solscan:</strong><br /><a href="#">https://solscan.io/token/[TOKEN]</a></p>
-    </div>
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold text-lime-300">Transparencia</h2>
+      <p class="mt-2 text-gray-300">El fundador se compromete a no vender antes de 6 meses o hasta listado en CEX.</p>
+      <p class="mt-2 text-sm">Wallet del fundador: <span class="text-lime-200">[WALLET_ADDRESS]</span></p>
+      <p class="text-sm">Token SPL: <span class="text-lime-200">[TOKEN_ADDRESS]</span></p>
+      <p class="text-sm mt-1">Ver en Solscan: <a href="#" class="text-lime-400 underline">https://solscan.io/token/[TOKEN]</a></p>
+    </section>
 
-    <div class="section">
-      <h2>Cómo comprar</h2>
-      <ol style="text-align: left; display: inline-block">
-        <li>Instala la wallet Phantom.</li>
-        <li>Envía algo de SOL a tu wallet.</li>
-        <li>Ve a Raydium o Jupiter y busca el par con este token.</li>
-        <li>Intercambia SOL por [Nombre de la Memecoin].</li>
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold text-lime-300">¿Cómo comprar?</h2>
+      <ol class="mt-4 text-left list-decimal list-inside space-y-2">
+        <li>Instala la wallet Phantom</li>
+        <li>Envíate algo de SOL</li>
+        <li>Ve a Raydium o Jupiter y busca este token</li>
+        <li>Intercambia SOL por [Nombre de la Memecoin]</li>
       </ol>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Contrato verificado</h2>
-      <p>Mint desactivado. LP tokens quemados con:</p>
-      <div class="code">
-        spl-token transfer &lt;LP_TOKEN_ADDRESS&gt; ALL 11111111111111111111111111111111 --fund-recipient
-      </div>
-    </div>
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold text-lime-300">Contrato Verificado</h2>
+      <p class="mt-2 text-sm text-gray-300">LP tokens quemados con el siguiente comando:</p>
+      <pre class="bg-black text-lime-400 p-4 rounded mt-2 text-sm overflow-x-auto">spl-token transfer &lt;LP_TOKEN_ADDRESS&gt; ALL 11111111111111111111111111111111 --fund-recipient</pre>
+    </section>
 
-    <div class="section">
-      <h2>Síguenos</h2>
-      <p><a href="#">Twitter</a> | <a href="#">Telegram</a></p>
-    </div>
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold text-lime-300">Síguenos</h2>
+      <p class="mt-2"><a href="#" class="text-lime-400 underline">Twitter</a> | <a href="#" class="text-lime-400 underline">Telegram</a></p>
+    </section>
   </div>
 </body>
 </html>
